@@ -5,7 +5,7 @@ import OpenAI from "openai";
 
 dotenv.config();
 const app = express();
-app.use(cors({ origin: "https://bugfreecode.netlify.app/" }));
+app.use(cors({ origin: "https://bugfreecode.netlify.app" }));
 app.use(express.json());
 
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
